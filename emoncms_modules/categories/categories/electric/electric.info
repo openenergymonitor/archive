@@ -1,0 +1,3 @@
+category = electric
+name = Electricity
+description = Calculate kWh/d contribution from your electricity use, automatically with an Energy Monitor

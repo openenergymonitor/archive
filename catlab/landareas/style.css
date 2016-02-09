@@ -1,0 +1,13 @@
+
+input {
+  color:#fff;
+  text-align: right;
+  border: none; border-bottom: 1px solid #fff;
+font-size:16px;
+  background-color:rgba(0,0,0,0);
+}
+
+.units {
+  font-size:14px;
+  color: #333;
+}

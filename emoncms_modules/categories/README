@@ -1,0 +1,47 @@
+Categories module
+*****************
+
+Installation instructions
+*************************
+
+1) Put this folder in the modules folder of emoncms (make sure the name categories is maintained)
+
+2) In your web browser goto: emoncms/categories/setup
+
+3) Then emoncms/categories/user
+
+4) Try going to 'add category' -> woodfire -> enter in 1.0 -> click ok and go back to the categories/user page
+do you see a big yellow circle?
+
+Thats pretty much it!
+---------------------------------------
+
+ but if you want a link to appear to the categories/user page so that you can navigate there easily:
+
+1) Open up index.php in the main emoncms folder
+
+2) Scroll down to the bit where it says primary menu
+
+REPLACE:
+
+  //----------------------------------------------------------------
+  // Primary Menu
+  //----------------------------------------------------------------
+  $variables['menu'] = "";
+  if ($_SESSION['valid']) $variables['menu'] .= "<a href='".$systempath."home'>Home</a> | <a href='".$systempath."feed/view'>Feeds</a>";
+  if (!$_SESSION['valid']) $variables['menu'] .= "<a href='".$systempath."home'>Home</a>";
+
+WITH:
+
+  //----------------------------------------------------------------
+  // Primary Menu
+  //----------------------------------------------------------------
+  $variables['menu'] = "";
+  if ($_SESSION['valid']) $variables['menu'] .= "<a href='".$systempath."home'>Home</a> | <a href='".$systempath."categories/user'>Profile</a> | <a href='".$systempath."feed/view'>Feeds</a>";
+  if (!$_SESSION['valid']) $variables['menu'] .= "<a href='".$systempath."home'>Home</a>";
+
+--------------------
+
+Got to find a better way of doing that...
+
+

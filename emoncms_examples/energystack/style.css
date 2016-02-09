@@ -1,0 +1,14 @@
+
+input {
+  width:100px; 
+  text-align: right; 
+  color: #F78623; 
+  font-weight: bold; 
+  border: none; border-bottom: 1px solid #AAA;
+  font-size:16px;
+}
+
+.units {
+  font-size:14px;
+  color: #333;
+}
